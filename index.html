@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guest Network</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <!-- Animated Connection Visual -->
+    <div class="network-visual">
+      <div class="icon">
+        <i class="fas fa-desktop"></i>
+      </div>
+      <div class="link glowing"></div>
+      <div class="icon">
+        <i class="fas fa-network-wired"></i>
+      </div>
+      <div class="link glowing"></div>
+      <div class="icon">
+        <i class="fas fa-globe"></i>
+      </div>
+    </div>
+
+    <!-- Connection Message -->
+    <h1 class="success-message">You are successfully connected to the internet.</h1>
+
+    <!-- Rules Link -->
+    <button id="view-rules">View Rules</button>
+
+    <!-- Offline Banner -->
+    <div id="offline-banner" class="offline hidden">
+      <p>Network is currently offline or slow.</p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Powered by Knovon Networking</p>
+      <img src="https://asset.knovon.net/Knovon_white.png" alt="Knovon Logo" class="footer-logo">
+    </footer>
+
+    <!-- Overlay for Rules -->
+    <div id="rules-overlay" class="overlay hidden">
+      <div class="overlay-content">
+        <h2>Network Rules</h2>
+        <p>This network is monitored. By connecting, you agree to our terms and conditions.</p>
+        <button id="close-overlay">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
